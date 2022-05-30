@@ -49,11 +49,20 @@
                                     <constraint firstAttribute="height" constant="2" id="vdO-8i-cuu"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myImage" translatesAutoresizingMaskIntoConstraints="NO" id="MSv-Om-R8x">
+                                <rect key="frame" x="0.0" y="246" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="gIi-gA-87m"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oEi-ZF-DHN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HJ9-Vc-QP0"/>
+                            <constraint firstItem="MSv-Om-R8x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WDU-YW-MFV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MSv-Om-R8x" secondAttribute="trailing" id="Y2y-is-K15"/>
+                            <constraint firstItem="MSv-Om-R8x" firstAttribute="top" secondItem="YWf-Qd-3cv" secondAttribute="bottom" id="cJi-4L-6gP"/>
                             <constraint firstItem="oEi-ZF-DHN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hc7-EY-rg8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YWf-Qd-3cv" secondAttribute="trailing" id="hmp-E4-ZsE"/>
                             <constraint firstItem="YWf-Qd-3cv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ixV-un-9mc"/>
@@ -62,6 +71,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myImage" destination="MSv-Om-R8x" id="4Gr-gd-hM7"/>
                         <outlet property="myView" destination="oEi-ZF-DHN" id="A0f-ve-yZh"/>
                     </connections>
                 </viewController>
@@ -71,6 +81,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="myImage" width="7087" height="4724"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
