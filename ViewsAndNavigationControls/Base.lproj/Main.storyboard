@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nU7-e8-Xee">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1402"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1702"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-pc-c5x">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -30,10 +30,16 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xaN-dr-GTP">
-                                                <rect key="frame" x="0.0" y="200" width="414" height="1202"/>
+                                                <rect key="frame" x="0.0" y="200" width="414" height="1502"/>
                                                 <subviews>
+                                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ani-IX-sG0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="yit-zX-ybP"/>
+                                                        </constraints>
+                                                    </mapView>
                                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXG-qm-Ew5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                                        <rect key="frame" x="0.0" y="300" width="414" height="400"/>
                                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="400" id="Xq2-cO-Zn6"/>
@@ -44,7 +50,7 @@
                                                         </wkWebViewConfiguration>
                                                     </wkWebView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEi-ZF-DHN">
-                                                        <rect key="frame" x="0.0" y="400" width="414" height="400"/>
+                                                        <rect key="frame" x="0.0" y="700" width="414" height="400"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19z-ge-tmc">
                                                                 <rect key="frame" x="20" y="20.5" width="346" height="20.5"/>
@@ -73,14 +79,14 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjq-Dl-TPY">
-                                                        <rect key="frame" x="0.0" y="800" width="414" height="2"/>
+                                                        <rect key="frame" x="0.0" y="1100" width="414" height="2"/>
                                                         <color key="backgroundColor" systemColor="linkColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="2V7-mX-R26"/>
                                                         </constraints>
                                                     </view>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mindless rogue" translatesAutoresizingMaskIntoConstraints="NO" id="bhq-W0-TpE">
-                                                        <rect key="frame" x="0.0" y="802" width="414" height="400"/>
+                                                        <rect key="frame" x="0.0" y="1102" width="414" height="400"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="400" id="agG-O7-t7k"/>
                                                         </constraints>
@@ -89,13 +95,13 @@
                                                 <constraints>
                                                     <constraint firstItem="lXG-qm-Ew5" firstAttribute="leading" secondItem="xaN-dr-GTP" secondAttribute="leading" id="3Kt-2N-T1a"/>
                                                     <constraint firstItem="Qjq-Dl-TPY" firstAttribute="top" secondItem="oEi-ZF-DHN" secondAttribute="bottom" id="Atx-Ec-JMK"/>
-                                                    <constraint firstItem="lXG-qm-Ew5" firstAttribute="top" secondItem="xaN-dr-GTP" secondAttribute="top" id="IcW-hS-ySY"/>
                                                     <constraint firstAttribute="trailing" secondItem="lXG-qm-Ew5" secondAttribute="trailing" id="TD9-wU-SrL"/>
                                                     <constraint firstItem="bhq-W0-TpE" firstAttribute="leading" secondItem="xaN-dr-GTP" secondAttribute="leading" id="VxJ-pd-V0W"/>
                                                     <constraint firstItem="Qjq-Dl-TPY" firstAttribute="leading" secondItem="xaN-dr-GTP" secondAttribute="leading" id="YPt-6w-uWV"/>
                                                     <constraint firstAttribute="trailing" secondItem="bhq-W0-TpE" secondAttribute="trailing" id="cga-ob-2pf"/>
                                                     <constraint firstItem="oEi-ZF-DHN" firstAttribute="top" secondItem="lXG-qm-Ew5" secondAttribute="bottom" id="gHi-mT-MmL"/>
                                                     <constraint firstAttribute="trailing" secondItem="Qjq-Dl-TPY" secondAttribute="trailing" id="jVG-k7-Uht"/>
+                                                    <constraint firstItem="lXG-qm-Ew5" firstAttribute="top" secondItem="Ani-IX-sG0" secondAttribute="bottom" id="sGW-EK-96T"/>
                                                     <constraint firstItem="bhq-W0-TpE" firstAttribute="top" secondItem="Qjq-Dl-TPY" secondAttribute="bottom" id="sGx-ql-Jtr"/>
                                                 </constraints>
                                             </stackView>
@@ -137,6 +143,7 @@
                     <connections>
                         <outlet property="myFakeView" destination="fLr-pc-c5x" id="KOQ-mj-es9"/>
                         <outlet property="myImageView" destination="bhq-W0-TpE" id="Zso-Fh-F05"/>
+                        <outlet property="myMap" destination="Ani-IX-sG0" id="Dzi-vl-u0l"/>
                         <outlet property="myView" destination="oEi-ZF-DHN" id="A0f-ve-yZh"/>
                         <outlet property="myWebView" destination="lXG-qm-Ew5" id="d1G-ko-P8k"/>
                     </connections>
