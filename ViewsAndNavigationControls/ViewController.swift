@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
-		title = "My View Controller"
+		// title = "My View Controller"
 		
 		myWebView.load(URLRequest(url: URL(string: "https://google.es")!))
 		
