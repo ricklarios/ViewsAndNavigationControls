@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ViewsAndNavigationControls
 //
-//  Created by Cuenta Personal on 31/5/22.
+//  Created by Rick Larios on 31/5/22.
 //
 
 import UIKit
